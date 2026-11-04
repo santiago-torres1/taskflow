@@ -1,0 +1,23 @@
+name: Bug report
+description: Something is broken
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Include steps to reproduce and what you expected.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [orders-api, pricing-svc, remediation-func, pipelines, infra]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or build ID
