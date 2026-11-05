@@ -1,0 +1,9 @@
+name: slack-test
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  fail:
+    runs-on: ubuntu-latest
+    steps:
+      - run: exit 1
